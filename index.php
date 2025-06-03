@@ -27,12 +27,13 @@ if (!$get) {
     die("No stream identifier provided");
 }
 
-$mpdUrl = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/' . $get;
+$mpdUrl = 'https://l02.dp.sooka.my/' . $get;
 
 // Set headers for the request
 $mpdheads = [
   'http' => [
-      'header' => "User-Agent: user-agent=Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36",
+      'header' => "User-Agent: Mozilla/5.0 (Linux; Android 11; Xperia 5 Build/استخدم هذا الرمز للوصول إلى القنوات. احتفظ به آمنًا ولا تشاركه مع أي شخص; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.7.1675.48 Safari/537.36",
+      'header' => "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDg5MTUxMjksImlzcyI6IlZSIiwiZXhwIjoxNzQ4OTg5ODAwLCJ3bXZlciI6Mywid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjMsIndtdG1pZHZlciI6NCwid21pZGxlbiI6NTEyLCJ3bW9waWQiOjMyLCJ3bWlkIjoiMzQzYjNmYmEtYjAxNy00ZTFhLWJlMjQtNmM2MzIxMDI0OTU0IiwiZmlsdGVyIjoiKHR5cGU9PVwidmlkZW9cIiYmRGlzcGxheUhlaWdodDw9NzIwKXx8KHR5cGU9PVwiYXVkaW9cIiYmZm91ckNDIT1cImFjLTNcIil8fCh0eXBlIT1cInZpZGVvXCImJnR5cGUhPVwiYXVkaW9cIikifQ.4XSStLcrR88wH-l-o8W0lik0B4fnvmnPxNdYUICOHYo"
       'follow_location' => 1,
       'timeout' => 5
   ]
